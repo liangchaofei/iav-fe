@@ -1,0 +1,24 @@
+{
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "cSpell.words": [
+    "ahooks",
+    "antd",
+    "formily",
+    "fullcalendar",
+    "multimonth",
+    "packagejson",
+    "pind",
+    "tailwindcss",
+    "timegrid",
+    "tinymce",
+    "umijs",
+    "valtio",
+    "wavesurfer",
+    "xgplayer"
+  ]
+}
