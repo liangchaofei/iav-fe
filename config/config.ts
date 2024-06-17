@@ -1,5 +1,15 @@
 import { defineConfig } from '@umijs/max';
-import { routes } from './routes';
+// import { routes } from './routes';
+import dotenv from 'dotenv';
+import routesConfig, { RouterKey } from '../routers';
+
+// 加载环境变量
+dotenv.config();
+const selectedRouter: RouterKey =
+  (process.env.router as RouterKey) || 'RouterA';
+const routes = routesConfig[selectedRouter];
+
+console.log('ROUTER', selectedRouter);
 export default defineConfig({
   antd: {},
   access: {},
@@ -18,5 +28,8 @@ export default defineConfig({
   },
   esbuildMinifyIIFE: true, // 开启 esbuild 压缩
   npmClient: 'pnpm',
-  define: {},
+  verifyCommit: {}, // 验证commit
+  define: {
+    'process.env.router': process.env.router,
+  },
 });

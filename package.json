@@ -2,7 +2,7 @@
   "private": true,
   "author": "",
   "scripts": {
-    "build": "max build",
+    "build": "node scripts/set-env.js && max build",
     "dev": "max dev",
     "format": "prettier --cache --write .",
     "postinstall": "max setup",
@@ -17,6 +17,7 @@
     "@umijs/max": "^4.2.11",
     "antd": "^5.4.0",
     "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
     "fecha": "^4.2.3",
     "tailwindcss": "^3.4.4"
   },
