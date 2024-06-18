@@ -8,7 +8,7 @@ import DemoLine from './components/Line';
 
 const HomePage: React.FC = () => {
   return (
-    <PageContainer ghost header={{ title: '' }}>
+    <PageContainer ghost header={{ title: '图表' }}>
       <Row>
         <Col span={8} className="pr-2">
           <Card>
